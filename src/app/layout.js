@@ -1,17 +1,127 @@
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ankitmishraindia",
+  title: "JamStack Pro",
   description: "My name is Ankit Mishra. I am a experienced mern stack developer. I am writing on Hashnode.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="w-full h-full flex">
+          {/* ************************Dashboard******************************* */}
+           <div className="h-screen w-[240px] fixed left-0 px-4">
+              <div className="mt-14 py-2 pl-3  cursor-pointer rounded-md flex gap-3 ">
+                  <Image
+                    src="/home-2.png"
+                    alt="home"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Dashboard</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3 bg-[var(--violet-dark)]">
+                  <Image
+                    src="/document-text.png"
+                    alt="content"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p className="text-white">Content</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/user-square.png"
+                    alt="team"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Team</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/profile-2user.png"
+                    alt="team"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>User</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/monitor-mobbile.png"
+                    alt="moniotor"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>App/Web</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/status-up.png"
+                    alt="stat"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Analytics</p>
+                  <div className="bg-[var(--violet-light)] text-[var(--violet-dark)] rounded-full px-2 text-sm flex items-center justify-center ">3</div>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/video-square.png"
+                    alt="video"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Media</p>
+                  <div className="bg-[var(--violet-light)] text-[var(--violet-dark)] rounded-full text-sm flex items-center justify-center px-1">18</div>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/notification.png"
+                    alt="notification"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Notification</p>
+              </div>
+              <div className="mt-1 py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/Setting.png"
+                    alt="setting"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Settings</p>
+              </div>
+              <div className="mt-14 bg-[var(--violet-light)] py-2 pl-3 rounded-md cursor-pointer flex gap-3">
+                  <Image
+                    src="/fi_headphones.png"
+                    alt="support"
+                    className=""
+                    width={20}
+                    height={20}
+                  />
+                  <p>Contact Support</p>
+              </div>
+           </div>
+            {children}
+        </div>
+       </body>
     </html>
   );
 }
