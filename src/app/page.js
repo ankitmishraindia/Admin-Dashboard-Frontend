@@ -1,10 +1,11 @@
 import AdminCard from "@/components/AdminCard";
 import ArticleCard from "@/components/ArticleCard";
+import StoryCard from "@/components/StoryCard";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen ml-[240px] bg-[#F8FAFB] w-full pb-4">
+    <main className="min-h-screen ml-[240px] w-[calc(100%-240px)] bg-[#F8FAFB] pb-4">
       {/* ********************nav part******************** */}
       <div className="h-[80px] w-full bg-white px-5 flex items-center justify-between">
           <div className="mt-1 py-1 pl-3 pr-8 rounded-3xl cursor-pointer flex gap-3 bg-[#FCFCFD] border">
@@ -91,22 +92,51 @@ export default function Home() {
             <a className="text-[20px] text-[var(--violet-text)] font-semibold" href="">See all</a>
           </div>
               
-          <div className="flex gap-2 mt-3 overflow-hidden">
+          <div className=" space-x-2 mt-3 overflow-hidden whitespace-nowrap">
                <ArticleCard 
                image='toparticlesmain1.png' 
                tags={['Branding','Communication','Branding']} 
                type='Buisness'
+               status='Created'
                heading='7 Rules of Effective Branding'/>
+               <ArticleCard 
+               image='toparticlemain3.png' 
+               tags={['World','Population']} 
+               type='Economy'
+               status=''
+               heading='Research on biodiversity an..'/>
+               <ArticleCard 
+               image='toparticlemain2.png' 
+               tags={['Politics','Defence']} 
+               type='Politics'
+               status=''
+               heading='Close and historical ties to h..'/>
                <ArticleCard 
                image='toparticlesmain1.png' 
                tags={['Branding','Communication','Branding']} 
                type='Buisness'
+               status='Created'
                heading='7 Rules of Effective Branding'/>
-               <ArticleCard 
-               image='toparticlesmain1.png' 
-               tags={['Branding','Communication','Branding']} 
+              
+               
+          </div>
+        </section>
+        {/* ***************Top Stories ***** */}
+        <section>
+          <div className="flex justify-between w-full pr-5">
+            <h2 className="text-[24px] font-semibold">Top Stories</h2>
+            <a className="text-[20px] text-[var(--violet-text)] font-semibold" href="">See all</a>
+          </div>
+              
+          <div className="mt-3 w-full space-x-2 overflow-hidden whitespace-nowrap">
+               <StoryCard 
+               image='topstory1.png' 
                type='Buisness'
-               heading='7 Rules of Effective Branding'/>
+               heading='How 7 lines code turned into
+               $36 Billion Empire'/>
+              
+              
+               
           </div>
         </section>
       </div>
