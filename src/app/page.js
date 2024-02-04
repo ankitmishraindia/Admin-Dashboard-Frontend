@@ -1,3 +1,4 @@
+import AdCard from "@/components/AdCard";
 import AdminCard from "@/components/AdminCard";
 import ArticleCard from "@/components/ArticleCard";
 import StoryCard from "@/components/StoryCard";
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen ml-[240px] w-[calc(100%-240px)] bg-[#F8FAFB] pb-4">
       {/* ********************nav part******************** */}
-      <div className="h-[80px] w-full bg-white px-5 flex items-center justify-between">
+      <div className="h-[80px] w-full bg-white px-5 flex items-center justify-between shadow-md">
           <div className="mt-1 py-1 pl-3 pr-8 rounded-3xl cursor-pointer flex gap-3 bg-[#FCFCFD] border">
                       <Image
                         src="/akar-icons_search.png"
@@ -134,8 +135,52 @@ export default function Home() {
                type='Buisness'
                heading='How 7 lines code turned into
                $36 Billion Empire'/>
+               <StoryCard 
+               image='topstory2.png' 
+               type='Buisness'
+               status='Created'
+               heading='Chez pierre restaurant in Monte Carlo by Vuidafieri'/>
+               <StoryCard 
+               image='topstory3.png' 
+               type='Politics'
+               status=''
+               heading='Teknion wins Gold at 2022 
+               International Design Awards'/>
+               <StoryCard 
+               image='topstory4.png' 
+               type='Buisness'
+               status='Created'
+               heading='Chez pierre restaurant in Monte Carlo by Vuidafieri'/>
+               <StoryCard 
+               image='topstory1.png' 
+               type='Buisness'
+               heading='How 7 lines code turned into
+               $36 Billion Empire'/>
+          </div>
+        </section>
+        {/* ***************Advertisement ***** */}
+        <section>
+          <div className="flex justify-between w-full pr-5">
+            <h2 className="text-[24px] font-semibold">Advertisement</h2>
+            <a className="text-[20px] text-[var(--violet-text)] font-semibold" href="">See all</a>
+          </div>
               
-              
+          <div className="mt-3 w-full flex gap-5 pr-5">
+               <AdCard 
+               image='advertise1.png' 
+               heading='Build your business'
+               subtext='Shopify has all the tools you need to start, sell, market, and manage.'
+               />
+               <AdCard 
+               image='advertise2.png' 
+               heading='Libre Coffee'
+               subtext='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+               />
+               <AdCard 
+               image='advertise3.png' 
+               heading='KFC'
+               subtext='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+               />
                
           </div>
         </section>

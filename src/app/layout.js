@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={urbanist.className}>
-        <div className="w-full h-full flex">
+        <div className="flex">
           {/* ************************Dashboard******************************* */}
            <div className="h-screen w-[240px] fixed left-0 px-4">
               <div className="mt-14 py-2 pl-3  cursor-pointer rounded-md flex gap-3 ">

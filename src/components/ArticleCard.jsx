@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 function ArticleCard({image,status,tags,type,heading}){
 
 
@@ -41,9 +41,9 @@ function ArticleCard({image,status,tags,type,heading}){
                 {tags.map((item,index)=><div key={index} className="px-3 py-2 text-sm bg-gray-100 rounded-md w-fit">{item}</div>)}
             </div>
             <div className="flex justify-between w-full">
-                <Link href="/ViewClick" className="w-full">
+                
                    <button className="bg-[var(--violet-light)] text-[var(--violet-text)]  py-2 w-[93%] font-bold rounded-md">View</button>
-                </Link>
+                
                 <div className="py-2 px-3 bg-[#FAFAFA] flex items-center rounded-md space-x-[2px]">
                     <div className="rounded-full w-1 h-1 bg-[var(--violet-dark)]"></div>
                     <div className="rounded-full w-1 h-1 bg-[var(--violet-dark)]"></div>
