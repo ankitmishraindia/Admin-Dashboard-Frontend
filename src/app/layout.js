@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const urbanist=Urbanist({subsets:["latin"]})
 
 export const metadata = {
   title: "JamStack Pro",
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={urbanist.className}>
         <div className="w-full h-full flex">
           {/* ************************Dashboard******************************* */}
            <div className="h-screen w-[240px] fixed left-0 px-4">
@@ -21,8 +22,8 @@ export default function RootLayout({ children }) {
                     src="/home-2.png"
                     alt="home"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Dashboard</p>
               </div>
@@ -31,8 +32,8 @@ export default function RootLayout({ children }) {
                     src="/document-text.png"
                     alt="content"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p className="text-white">Content</p>
               </div>
@@ -41,8 +42,8 @@ export default function RootLayout({ children }) {
                     src="/user-square.png"
                     alt="team"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Team</p>
               </div>
@@ -51,8 +52,8 @@ export default function RootLayout({ children }) {
                     src="/profile-2user.png"
                     alt="team"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>User</p>
               </div>
@@ -61,8 +62,8 @@ export default function RootLayout({ children }) {
                     src="/monitor-mobbile.png"
                     alt="moniotor"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>App/Web</p>
               </div>
@@ -71,8 +72,8 @@ export default function RootLayout({ children }) {
                     src="/status-up.png"
                     alt="stat"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Analytics</p>
                   <div className="bg-[var(--violet-light)] text-[var(--violet-dark)] rounded-full px-2 text-sm flex items-center justify-center ">3</div>
@@ -82,8 +83,8 @@ export default function RootLayout({ children }) {
                     src="/video-square.png"
                     alt="video"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Media</p>
                   <div className="bg-[var(--violet-light)] text-[var(--violet-dark)] rounded-full text-sm flex items-center justify-center px-1">18</div>
@@ -93,8 +94,8 @@ export default function RootLayout({ children }) {
                     src="/notification.png"
                     alt="notification"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Notification</p>
               </div>
@@ -103,8 +104,8 @@ export default function RootLayout({ children }) {
                     src="/Setting.png"
                     alt="setting"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Settings</p>
               </div>
@@ -113,8 +114,8 @@ export default function RootLayout({ children }) {
                     src="/fi_headphones.png"
                     alt="support"
                     className=""
-                    width={20}
-                    height={20}
+                    width={24}
+                    height={24}
                   />
                   <p>Contact Support</p>
               </div>
