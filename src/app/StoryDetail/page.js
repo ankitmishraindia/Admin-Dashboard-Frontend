@@ -48,7 +48,7 @@ function StoryDetail(){
       </div>
 
       {/* *******************main part after nav********** */}
-      <div className="px-6 pt-14 w-full h-full">
+      <div className="px-6 pt-20 w-full h-[calc(100%-80px)]">
           <div className="flex justify-between">
                       <div className="flex items-center gap-2">
                         <Image
@@ -82,13 +82,13 @@ function StoryDetail(){
                       
                         
           </div>
-          <div className="w-full h-full relative mt-3 flex justify-center">
+          <div className="w-full h-[90%] relative mt-3 flex justify-center">
               <Image
               src="/storypage-blurimage.png"
               alt="topstory"
               fill                
               />
-              <div className="absolute h-full w-full flex items-center gap-3 p-2">
+              <div className="absolute h-full w-full flex items-center justify-center gap-3 p-1 ">
                                 <Image
                                        src="/storypage-rightarrow.png"
                                       alt="topstory"
@@ -96,13 +96,14 @@ function StoryDetail(){
                                       width={24}
                                       height={24}                           
                                   />
-                                <div className="relative h-full w-8/12">
+
+                                <div className="relative h-full w-4/12">
                                     <Image
                                        src="/storypage-lightimage.png"
                                       alt="topstory"
                                       className="rounded-md"
                                       fill
-                                      objectFit="cover"                           
+                                                              
                                     />
                                 </div>
                                 
